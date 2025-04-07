@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
   <!-- Schema Definition for Hotels -->
   <xsd:element name="Hotels">
     <xsd:complexType>
@@ -7,8 +8,8 @@
         <xsd:element name="Hotel" maxOccurs="unbounded">
           <xsd:complexType>
             <xsd:sequence>
-              <xsd:element name="Name"   type="xsd:string" />
-              <!-- Require at least 1 phone, but allow many: -->
+              <!-- Name first, then Phone, then Address -->
+              <xsd:element name="Name"   type="xsd:string"/>
               <xsd:element name="Phone"  type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
               <xsd:element name="Address">
                 <xsd:complexType>
@@ -19,13 +20,13 @@
                     <xsd:element name="State"  type="xsd:string"/>
                     <xsd:element name="Zip"    type="xsd:string"/>
                   </xsd:sequence>
-                  <!-- Optional attribute for Address -->
-                  <xsd:attribute name="NearestAirport" type="xsd:string" use="optional"/>
+                  <!-- Renamed to NearstAirport -->
+                  <xsd:attribute name="NearstAirport" type="xsd:string" use="optional"/>
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
 
-            <!-- One required attribute, one optional attribute on Hotel -->
+            <!-- Required HotelId, optional Rating -->
             <xsd:attribute name="HotelId" type="xsd:string" use="required"/>
             <xsd:attribute name="Rating"  type="xsd:decimal" use="optional"/>
           </xsd:complexType>
@@ -33,4 +34,5 @@
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
+
 </xsd:schema>
