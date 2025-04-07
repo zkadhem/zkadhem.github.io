@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-  <!-- Schema Definition for Hotels -->
   <xsd:element name="Hotels">
     <xsd:complexType>
       <xsd:sequence>
         <xsd:element name="Hotel" maxOccurs="unbounded">
           <xsd:complexType>
             <xsd:sequence>
-              <!-- Name first, then Phone, then Address -->
-              <xsd:element name="Name"   type="xsd:string"/>
-              <xsd:element name="Phone"  type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+              <!-- 1) Phone first, 2) Name second, 3) Address third -->
+              <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+              <xsd:element name="Name" type="xsd:string"/>
               <xsd:element name="Address">
                 <xsd:complexType>
                   <xsd:sequence>
@@ -20,8 +19,8 @@
                     <xsd:element name="State"  type="xsd:string"/>
                     <xsd:element name="Zip"    type="xsd:string"/>
                   </xsd:sequence>
-                  <!-- Renamed to NearstAirport -->
-                  <xsd:attribute name="NearstAirport" type="xsd:string" use="optional"/>
+                  <!-- 2) Mark the attribute as REQUIRED and spelled NearstAirport exactly. -->
+                  <xsd:attribute name="NearstAirport" type="xsd:string" use="required"/>
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
