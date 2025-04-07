@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root element incorrectly set to Hotel instead of Hotels -->
+<Hotel>
+  <!-- Hotel #1: OK here, for demonstration -->
+  <Hotel HotelId="H001" Rating="4.2">
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- (2) Missing required attribute: HotelId -->
+  <Hotel Rating="4.1">
+    <Name>Marriott Phoenix Airport</Name>
+    <Phone>602-273-7373</Phone>
+    <Address>
+      <Number>1101</Number>
+      <Street>N 44th St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85008</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- (3) Missing a Phone element entirely -->
+  <Hotel HotelId="H003" Rating="4.0">
+    <Name>DoubleTree by Hilton Hotel Phoenix Tempe</Name>
+    <Address>
+      <Number>2100</Number>
+      <Street>S Priest Dr</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85282</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- (4) Address tag not properly closed -->
+  <Hotel HotelId="H004">
+    <Name>Hyatt Regency Phoenix</Name>
+    <Phone>602-252-1234</Phone>
+    <Address>
+      <Number>122</Number>
+      <Street>N 2nd St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+  </Hotel>
+
+  <!-- (5) Two <Name> elements in the same Hotel -->
+  <Hotel HotelId="H005">
+    <Name>The Phoenician</Name>
+    <Name>Another Phoenician Name</Name>
+    <Phone>480-941-8200</Phone>
+    <Address>
+      <Number>6000</Number>
+      <Street>E Camelback Rd</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85251</Zip>
+    </Address>
+  </Hotel>
+
+</Hotel>

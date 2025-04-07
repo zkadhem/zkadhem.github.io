@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hotels>
+  <Hotel HotelId="H001" Rating="4.2">
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel HotelId="H002">
+    <Name>Hilton Phoenix Resort at the Peak</Name>
+    <Phone>602-997-2626</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>7677</Number>
+      <Street>N 16th St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85020</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel HotelId="H003" Rating="4.1">
+    <Name>Marriott Phoenix Airport</Name>
+    <Phone>602-273-7373</Phone>
+    <Address>
+      <Number>1101</Number>
+      <Street>N 44th St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85008</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel HotelId="H004" Rating="4.0">
+    <Name>DoubleTree by Hilton Hotel Phoenix Tempe</Name>
+    <Phone>480-967-6600</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>2100</Number>
+      <Street>S Priest Dr</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85282</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel HotelId="H005">
+    <Name>Hyatt Regency Phoenix</Name>
+    <Phone>602-252-1234</Phone>
+    <Address>
+      <Number>122</Number>
+      <Street>N 2nd St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel HotelId="H006" Rating="4.5">
+    <Name>The Phoenician</Name>
+    <Phone>480-941-8200</Phone>
+    <Address>
+      <Number>6000</Number>
+      <Street>E Camelback Rd</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85251</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel HotelId="H007" Rating="4.8">
+    <Name>Fairmont Scottsdale Princess</Name>
+    <Phone>480-585-4848</Phone>
+    <Address>
+      <Number>7575</Number>
+      <Street>E Princess Dr</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85255</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel HotelId="H008">
+    <Name>Talking Stick Resort</Name>
+    <Phone>480-850-7777</Phone>
+    <Address NearestAirport="Phoenix-Mesa Gateway">
+      <Number>9800</Number>
+      <Street>E Talking Stick Way</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85256</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel HotelId="H009" Rating="3.9">
+    <Name>La Quinta Inn &amp; Suites by Wyndham Phoenix Mesa West</Name>
+    <Phone>480-844-8747</Phone>
+    <Address>
+      <Number>902</Number>
+      <Street>W Grove Ave</Street>
+      <City>Mesa</City>
+      <State>AZ</State>
+      <Zip>85210</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel HotelId="H010">
+    <Name>Mesa Marriott</Name>
+    <Phone>480-898-8300</Phone>
+    <Address NearestAirport="Phoenix-Mesa Gateway">
+      <Number>200</Number>
+      <Street>N Centennial Way</Street>
+      <City>Mesa</City>
+      <State>AZ</State>
+      <Zip>85201</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel HotelId="H011" Rating="4.3">
+    <Name>Tempe Mission Palms</Name>
+    <Phone>480-894-1400</Phone>
+    <Address>
+      <Number>60</Number>
+      <Street>E 5th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+</Hotels>
